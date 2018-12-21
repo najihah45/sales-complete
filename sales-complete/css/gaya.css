@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+body {
+	font-family: Raleway, sans-serif;
+	/*font: "Trebuchet MS", Verdana, sans-serif;*/
+}
+
+#main {
+	padding: 10px;
+	background-color: #ffffff;
+	border-radius: 4px 4px 4px 4px;
+}
+
+ul#menu {
+	padding: 0px;
+	position: relative;
+	margin: 0;
+}
+
+ul#menu li {
+	display: inline;
+}
+
+ul#menu li a {
+	
+	background-color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	line-height: 2.5em;
+	color: #034af3;
+	border-radius: 7px 7px 0 0;
+	margin-right: 2px;
+}
+
+ul#menu li a:hover {
+	background-color: #e8eef4;
+	color: red;
+	
+}
+
+table {
+	/*font: 11px verdana, sans-serif;*/
+	font-family: Raleway, sans-serif;
+	font-size: 11px;
+}
+
+p,li {
+	/*font: 12px verdana, sans-serif;*/
+	font-family: Raleway, sans-serif;
+	font-size: 12px;
+}
+
+h1 {
+	/*font: 24px verdana, sans-serif;*/
+	font-weight: bold;
+	padding-left: 20px;
+	font-family: Raleway, sans-serif;
+	font-size: 24px;
+}
+
+td {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#header {
+	background-color: #47c9af;
+}
+
+.row1 {
+	background-color: #B4E1FA;
+}
+
+.row2 {
+	background-color: #69B1FA;
+}
+
+

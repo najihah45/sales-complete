@@ -1,0 +1,124 @@
+========================================================================================================================
+INSTALLATION & RUN THE SERVER
+========================================================================================================================
+
+1. Install XAMPP -> located in C:/xampp
+
+2. Open XAMPP control panel -> start Apache server & MySQL database
+
+3. Open a browser, type localhost --> make sure you can see Apache homepage. it means your server is up and running
+
+
+========================================================================================================================
+CREATE A DATABASE
+========================================================================================================================
+
+1. Open a browser, type localhost. Then click on the phpMyAdmin tab (top right of the screen)
+
+2. Click New tab (on the left) - give a name for your database (e.g: sales)
+
+3. Create table and columns
+
+
+========================================================================================================================
+IMPORT A DATABASE
+========================================================================================================================
+
+1. Open a browser, type localhost. Then click on the phpMyAdmin tab (top right of the screen)
+
+2. Click New tab (on the left) - give a name for your database (e.g: sales)
+
+3. Click the 'sales' database
+
+4. Click the 'import' tab from the menu, then click on the 'choose file' button and select 'sales.sql'
+
+
+========================================================================================================================
+WHERE TO PUT YOUR PHP SCRIPTS?
+========================================================================================================================
+
+1. Open XAMPP folder (C:/xampp) & open htdocs folder
+
+2. Copy the 'sales-complete' folder & paste in the htdocs folder
+
+
+* you put all of your PHP scripts in htdocs folder
+
+* 1 folder for 1 website
+
+
+========================================================================================================================
+HOW TO ACCESS YOUR WEBSITE?
+========================================================================================================================
+
+* simply type -> localhost/folder-name 
+
+			e.g: localhost/sales-complete
+			e.g: localhost/sales-complete/index.php
+			
+
+
+=======================================================================================================================
+GOOD PRACTICE!
+=======================================================================================================================
+1.  Always create an 'index.php' as the homepage because you don't have to call the index.php in the url like this -> localhost/sales-complete/index.php. Instead you just type like this -> localhost/sales-complete
+
+2. Name your website with simple, easy to type name without underscore _ or too many hyphens/dash -
+
+3. Always hide out any server default errors or warnings. Add this code in your PHP code -> error_reporting(0);
+   
+   *** But before you release your website to users, during development, DO NOT hide the error/warning. You need this to troubleshoot your code errors
+
+4. Create your own / customized messages if you want to notify users there is something wrong with your website. NEVER expose the REAL errors to users.
+
+5. Never tell users specifically whether USERNAME or PASSWORD is incorrect during log in process. Just display a general message saying username or password is incorrect.
+
+6. Try not to use a lot of colors and fonts in your website. Choose a theme color and font for the whole website to have that corporate look as it will increase the value of your website
+
+
+=======================================================================================================================
+PHP error_reporting REFERENCES
+=======================================================================================================================
+
+
+// Turn off all error reporting
+error_reporting(0);
+
+// Report simple running errors
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+// Reporting E_NOTICE can be good too (to report uninitialized
+// variables or catch variable name misspellings ...)
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+
+// Report all errors except E_NOTICE
+// This is the default value set in php.ini
+error_reporting(E_ALL ^ E_NOTICE);
+
+// Report all PHP errors (see changelog)
+error_reporting(E_ALL);
+
+// Report all PHP errors
+error_reporting(-1);
+
+// Same as error_reporting(E_ALL);
+ini_set('error_reporting', E_ALL);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
